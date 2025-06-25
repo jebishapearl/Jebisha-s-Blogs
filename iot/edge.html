@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What Is Edge Computing and Why Does IoT Need It?</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #1E3A8A;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f5f7fa;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #1E3A8A;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #1E3A8A;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #1E3A8A;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .privacy {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>What Is Edge Computing and Why Does IoT Need It?</h1>
+    <p><em>Learn why processing data near the device matters for speed and privacy</em></p>
+  </header>
+
+  <div class="content">
+    <a href="./iot.html" class="back-link">&larr; Back to Home</a>
+
+    <p>Let’s say you install a smart security camera outside your home. Someone walks up to your door. The camera captures the motion and sends the footage all the way to a cloud server sitting in some faraway data center. That server checks the footage, realizes someone is there, and then sends a notification back to your phone.</p>
+
+    <p>Sounds fine, right? But here’s the catch: this whole process can take a few seconds, and if your internet is slow or breaks, the whole thing fails. What if you could cut out the middleman — and let the camera itself do the thinking?</p>
+
+    <h2>Enter: Edge Computing</h2>
+    <p>Edge computing means doing the “thinking” — the data processing — closer to where the data is created. Instead of sending everything to a faraway cloud, devices like your camera or your smart speaker do some of the analysis right then and there.</p>
+
+    <p>So, instead of the camera saying “Here’s a video clip, figure it out,” it says “I’ve detected a person I don’t recognize” — instantly. That’s edge computing in action.</p>
+
+    <h2>Why It Matters for IoT</h2>
+    <p>IoT (Internet of Things) devices are everywhere — smart lights, smartwatches, door sensors, fridges, and even farm sensors. Most of them are small, low-power, and constantly collecting tiny pieces of data: temperatures, footsteps, open/close status, and so on.</p>
+
+    <p>If each one of these devices had to send data to the cloud every single time something happened, it would flood the network, waste energy, and slow everything down. Edge computing solves this by:</p>
+    <ul>
+      <li><strong>Acting faster:</strong> No need to wait for a cloud response. The device can respond immediately.</li>
+      <li><strong>Saving data:</strong> It only sends what’s necessary — like the summary of a conversation, not the entire chat.</li>
+      <li><strong>Protecting privacy:</strong> Since data isn’t leaving the device, your personal info stays with you.</li>
+      <li><strong>Working offline:</strong> Even without the internet, the device can keep doing its job.</li>
+    </ul>
+
+    <h2>Let’s Make It Even Simpler</h2>
+    <p>Think of cloud computing like asking someone else to solve a problem for you. You take your question, mail it to a friend, wait for them to read it, solve it, and mail back an answer. It works, but it takes time.</p>
+
+    <p>Edge computing is like solving the problem yourself using a calculator in your hand. It’s faster, more direct, and doesn’t depend on anyone else’s response.</p>
+
+    <h2>Who or What Is "The Edge"?</h2>
+    <p>The “edge” could be different things depending on the setup:</p>
+    <ul>
+      <li>The actual IoT device, like a smartwatch analyzing your heartbeat.</li>
+      <li>A local hub or gateway nearby, like a smart home hub or router.</li>
+      <li>A small computer located in the same building, like a mini server in a smart factory.</li>
+    </ul>
+
+    <h2>Where You’ll See Edge Computing in Real Life</h2>
+    <ul>
+      <li><strong>Smart speakers:</strong> Recognize wake words like “Hey Alexa” locally before connecting online.</li>
+      <li><strong>Smart traffic lights:</strong> Detect cars and adjust signals in real time without waiting on cloud instructions.</li>
+      <li><strong>Smart farms:</strong> Sensors check soil moisture and trigger watering systems immediately.</li>
+    </ul>
+
+    <h2>The Big Picture</h2>
+    <p>Edge computing helps devices act smarter, faster, and more independently. It reduces delays, protects privacy, and saves power. For the world of IoT, where devices are often scattered in remote areas, low-powered, or constantly busy, edge computing isn’t just useful — it’s essential.</p>
+
+    <div class="privacy">
+      <a href="https://jebishapearl.github.io/privacy-policy/">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025
+  </footer>
+
+</body>
+</html>

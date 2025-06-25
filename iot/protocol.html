@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How Devices Talk: The Secret Language of IoT</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #1E3A8A;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f5f7fa;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #1E3A8A;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #1E3A8A;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #1E3A8A;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .privacy {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How Devices Talk: The Secret Language of IoT</h1>
+    <p><em>Because even your fridge needs a way to say "hello"</em></p>
+  </header>
+
+  <div class="content">
+    <a href="./iot.html" class="back-link">&larr; Back to Home</a>
+
+    <p>We use smart devices every day — bulbs, plugs, thermostats, even doorbells. But how do they actually <strong>communicate</strong> with each other and with your phone? To understand that, we need to explore the "languages" they use — the secret protocols that let them talk.</p>
+
+    <h2>How It All Works: The Big Picture</h2>
+    <p>Imagine you tap a button on your phone that says, “Turn on the bedroom light.” Here’s what happens next:</p>
+    <ul>
+      <li>Your phone creates a message: <em>"Turn on the light."</em></li>
+      <li>That message travels across a network (like Wi-Fi or Bluetooth).</li>
+      <li>The message needs to follow a common language, or <strong>protocol</strong>, so both your phone and the bulb understand it.</li>
+      <li>Once the bulb receives and understands the message — it turns on.</li>
+    </ul>
+    <p>So in short: <strong>device ➝ network ➝ protocol ➝ action</strong>.</p>
+
+    <h2>Walkie-Talkie vs WhatsApp: A Simple Analogy</h2>
+    <p>If devices could talk like humans, some would use walkie-talkies — quick and short-range. Others would use WhatsApp — connected, fast, and internet-based. That’s the difference between protocols like Zigbee (walkie-talkie style) and MQTT (WhatsApp style).</p>
+
+    <h2>So, What Is MQTT — and What’s a "Topic"?</h2>
+    <p>MQTT is like a messaging system for devices. Instead of sending a message directly to one bulb, your phone sends it to a <strong>channel</strong> — like a group chat. That channel is called a <strong>topic</strong>.</p>
+    <p>For example, your phone sends “Turn on!” to the topic <code>bedroom/lights</code>. The smart bulb is <em>subscribed</em> to that topic, so it hears the message and turns on. Other devices that aren’t listening to that topic just ignore it.</p>
+
+    <h2>💡 Deep Dive: Why IoT Devices Need Special Protocols</h2>
+    <p>You might wonder — why not just use the regular internet like your laptop or phone?</p>
+    <p>Because many IoT devices are tiny and low-powered. They need to:</p>
+    <ul>
+      <li>Send tiny amounts of data (just a few bytes like "ON" or "22°C").</li>
+      <li>Use very little energy (some run on small batteries for years).</li>
+      <li>Work in weak or faraway networks (like sensors in a farm or parking lot).</li>
+    </ul>
+    <p>So, lightweight protocols like MQTT, CoAP, Zigbee, and LoRa are perfect — they’re like sending a postcard instead of a full-blown email. Simple, fast, and battery-friendly.</p>
+
+    <h2>Meet the Key Protocols</h2>
+    <ul>
+      <li><strong>MQTT</strong>: A messaging app for devices. Fast, reliable, and used over Wi-Fi or mobile data.</li>
+      <li><strong>CoAP</strong>: A mini version of the web — designed for devices with very little processing power.</li>
+      <li><strong>Zigbee</strong>: Great for short-range, local device clusters like smart home gadgets.</li>
+      <li><strong>LoRa</strong>: Designed for long distances using very low power — think agriculture and city-wide sensors.</li>
+    </ul>
+
+    <h2>Why This Matters</h2>
+    <p>Understanding how IoT devices communicate helps you choose smarter tech, troubleshoot better, and maybe even build your own IoT project someday. Next time your smart plug misbehaves, you’ll know — it’s probably not the bulb. It might be the language they’re speaking.</p>
+
+    <div class="privacy">
+      <a href="https://jebishapearl.github.io/privacy-policy/">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025
+  </footer>
+
+</body>
+</html>

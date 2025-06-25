@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attention Is All You Need — Explained Simply</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #333;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #2d5d34;
+    }
+
+    a.back-home {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: grey;
+      text-decoration: none;
+    }
+
+    .example-box {
+      background-color: #d3e7d8;
+      padding: 1rem;
+      margin: 1rem 0 1rem 1rem;
+      border-left: 5px solid #4b8b63;
+      font-style: italic;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <a href="./ai.html" class="back-home">&larr; Back to Home</a>
+
+  <h1>"Attention Is All You Need" — But What Does That Even Mean?</h1>
+
+  <div class="section">
+    <p>Okay, let’s be honest. If you heard the phrase <em>“Attention Is All You Need,”</em> and thought it was a self-help book, you’re not alone.</p>
+    <p>Turns out, it’s actually the name of a research paper that changed the way artificial intelligence (AI) understands language — including how tools like ChatGPT work today.</p>
+    <p>But don’t worry — we’re not getting technical. You won’t need a PhD to get this. Let’s explain it like we’re chatting over coffee.</p>
+  </div>
+
+  <div class="section">
+    <h2>The Old Way: Word by Word, Like a Grandma Reading Texts</h2>
+    <p>Before 2017, most AI models read sentences <em>one word at a time</em> and remembered each word as they went. Sort of like when your grandma texts:</p>
+    <div class="example-box">"Going to... wait... what was I saying?"</div>
+    <p>AI used to read that way too. Slowly, remembering bit by bit. It was okay, but clumsy — especially for long sentences or tricky grammar.</p>
+  </div>
+
+  <div class="section">
+    <h2>What’s Attention? Think Group Chats.</h2>
+    <p>Now imagine you’re in a group chat with 6 friends. Someone says:</p>
+    <div class="example-box">“He really nailed it last night!”</div>
+    <p>You’d naturally ask: “Wait, who’s ‘he’? What did he do? What’s the context?”</p>
+    <p>Your brain jumps around the previous messages to figure it out. You don’t reread everything — you just look where it <em>matters</em>.</p>
+    <p>That’s exactly what “attention” does in AI. It lets the model scan the whole sentence (or conversation), and focus only on the words that help make sense of things.</p>
+  </div>
+
+  <div class="section">
+    <h2>Okay, But What’s So Special About That?</h2>
+    <p>Before attention, AI had memory problems. It could only look back a little bit — and it’d forget stuff easily. Like trying to write an essay with only the last 3 words in your head.</p>
+    <p>With attention, AI can look at the whole sentence, paragraph, or even a page — and figure out <em>which words matter</em> for understanding what’s going on.</p>
+  </div>
+
+  <div class="section">
+    <h2>Real-World Example #1: The Missing "It"</h2>
+    <p>Take this sentence:</p>
+    <div class="example-box">“The bird didn’t land on the branch because it was too thin.”</div>
+    <p>What’s “too thin”? The <strong>branch</strong>, right?</p>
+    <p>Now change one word:</p>
+    <div class="example-box">“The bird didn’t land on the branch because it was too tired.”</div>
+    <p>Now “it” refers to the <strong>bird</strong>.</p>
+    <p>See how everything depends on context? Attention helps AI figure that out.</p>
+  </div>
+
+  <div class="section">
+    <h2>Real-World Example #2: Recipes</h2>
+    <p>Let’s say you ask ChatGPT:</p>
+    <div class="example-box">“Can I add lemon juice instead of vinegar?”</div>
+    <p>A dumb AI might say: “Yes, you can add lemon juice.”</p>
+    <p>A smarter one using attention thinks: “Wait, you said <em>instead of vinegar</em>. So this is a substitution question.”</p>
+    <p>Attention helps it <em>pay attention</em> to the small details so it doesn’t give the wrong answer.</p>
+  </div>
+
+  <div class="section">
+    <h2>Why “Attention Is All You Need”?</h2>
+    <p>Back then, most researchers thought you needed complex systems that "remembered" previous words — like mental notepads.</p>
+    <p>But the paper said: “Nah. You don’t need all that. Just teach the model to focus on what matters. That’s enough.”</p>
+    <p>And boom — it worked better than anything before.</p>
+    <p>This new design became known as the <strong>Transformer</strong> model. (Not the robot kind. Though… kinda cool name, right?)</p>
+  </div>
+
+  <div class="section">
+    <h2>Why You Should Care</h2>
+    <p>This idea of “attention” powers everything from:</p>
+    <ul>
+      <li>ChatGPT</li>
+      <li>Google Translate</li>
+      <li>YouTube subtitles</li>
+      <li>AI voice assistants</li>
+      <li>Even image generators (like DALL·E)</li>
+    </ul>
+    <p>It’s the reason these tools feel so <em>smart</em>. Because they’re not just reading word by word. They’re figuring out what matters — just like we do in real life.</p>
+  </div>
+
+  <div class="section">
+    <h2>TL;DR – The Paper That Changed the Game</h2>
+    <p><strong>“Attention Is All You Need”</strong> is a 2017 research paper that taught AI to:</p>
+    <ul>
+      <li>Stop reading like a robot</li>
+      <li>Focus like a human</li>
+      <li>Understand better, faster, and smarter</li>
+    </ul>
+    <p>It’s not magic. It’s not mind reading. It’s just… attention. And turns out, that really <em>is</em> all you need.</p>
+  </div>
+
+  <footer>
+    <p><a href="https://jebishapearl.github.io/privacy-policy/">Privacy Policy</a></p>
+  </footer>
+  </div>
+</body>
+</html>

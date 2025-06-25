@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battery Life & Power: How IoT Devices Stay Awake 24/7</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: #1E3A8A;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f5f7fa;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #1E3A8A;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #1E3A8A;
+      margin-top: 30px;
+    }
+
+    a {
+      color: #1E3A8A;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .privacy {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Battery Life & Power: How IoT Devices Stay Awake 24/7</h1>
+    <p><em>Tips and tech behind their incredible energy efficiency</em></p>
+  </header>
+
+  <div class="content">
+    <a href="./iot.html" class="back-link">&larr; Back to Home</a>
+
+    <p>Have you ever wondered how a smart sensor in a farm or a fitness band on your wrist can work for months, sometimes even years, without needing a charge? Unlike your smartphone, which needs daily charging, these devices are engineered for ultra-low power consumption. But what does that really mean? Let's break it down step by step.</p>
+
+    <h2>Why Not Just Use Bigger Batteries?</h2>
+    <p>It’s tempting to think the easiest solution is to stick a big battery in every device. But bigger batteries come with trade-offs. They make devices bulkier, heavier, and more expensive — not ideal for wearables or tiny sensors meant to sit unnoticed. More importantly, they’re wasteful when the device only needs to send a few pieces of data a day.</p>
+    <p>Instead, engineers have learned how to design devices that sip power instead of gulping it. This is where the term <strong>low power</strong> comes in — it means the device is designed to do its job using the absolute minimum amount of electricity possible, often measured in microwatts or milliwatts.</p>
+
+    <h2>Sleep Mode: Staying Off, Most of the Time</h2>
+    <p>Here’s a trick many IoT devices use: they stay asleep for most of their life. Let’s say a temperature sensor only needs to send a reading every 10 minutes. Instead of staying fully powered, it “sleeps” in between, using almost no energy. When it wakes up, it powers the sensor, takes a reading, sends the data, and immediately goes back to sleep. This can reduce power consumption by over 90%.</p>
+    <p>This is similar to how your phone’s screen turns off when not in use — except IoT devices go even further, shutting down everything they don’t need to conserve every drop of battery.</p>
+
+    <h2>Communication: The Silent Energy Thief</h2>
+    <p>Talking wirelessly — like sending data over Wi-Fi or Bluetooth — is one of the biggest power drains. That’s why IoT devices don’t use regular Wi-Fi unless absolutely necessary. Instead, they use special communication protocols like:</p>
+    <ul>
+      <li><strong>LoRa:</strong> Long Range communication with extremely low power use, ideal for devices in rural or remote areas.</li>
+      <li><strong>BLE (Bluetooth Low Energy):</strong> Designed to use 10x less power than classic Bluetooth for short-range data transfer.</li>
+      <li><strong>Zigbee:</strong> Great for short-distance, low-bandwidth communication in smart homes.</li>
+    </ul>
+    <p>These technologies transmit small bursts of data and immediately go quiet again — the equivalent of whispering a few words and then turning the mic off.</p>
+
+    <h2>Minimal Data, Maximum Efficiency</h2>
+    <p>Another secret to long battery life is that IoT devices don’t try to send too much data. Instead of images or videos, they often send data like “temperature: 22°C” or “door: opened.” That’s just a few bytes, and sending fewer bytes takes less time — and therefore less energy.</p>
+
+    <h2>Efficient Hardware Design</h2>
+    <p>The microcontrollers (tiny computers) inside these devices are built to be power-aware. That means they can throttle down power when idle, power off unused parts, and even manage how fast they operate to save energy. In fact, some microcontrollers draw less power when running than a digital watch.</p>
+
+    <h2>Bonus: Power from the Environment</h2>
+    <p>In some advanced cases, IoT devices don’t rely on batteries alone. They use energy harvesting — tiny solar panels, vibrations, heat, or even radio waves from the environment to recharge themselves. This doesn’t work everywhere yet, but it's promising for future devices that could operate indefinitely.</p>
+
+    <h2>The Big Picture</h2>
+    <p>What makes IoT special isn’t just that it’s smart — it’s that it can be smart all the time without being plugged in. By combining smart communication, energy-saving chips, and clever sleep cycles, these devices achieve something we often take for granted: they just work, day in and day out, silently and efficiently.</p>
+
+    <div class="privacy">
+      <a href="https://jebishapearl.github.io/privacy-policy/">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025
+  </footer>
+
+</body>
+</html>

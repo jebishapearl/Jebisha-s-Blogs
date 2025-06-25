@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1a1a1a, #003333);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.back-home {
+  display: inline-block;
+  margin-bottom: 3rem;
+  color: #00ffc3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-home:hover {
+  color: #00bfa5;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.blog-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ai-icon {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: #f3fbfb;
+  font-weight: bold;
+}
+
+.blog-card a:hover {
+  color: #0a0a0a;
+}
+
+.blog-summary {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  color: #bcbaba;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.blog-card:hover .blog-summary {
+  max-height: 200px;
+  opacity: 1;
+}
